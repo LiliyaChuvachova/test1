@@ -36,7 +36,7 @@
     font-family: Forum-Regular, Verdana, sans-serif;
     font-size:25px; 
 }
-#connection{
+#feedback{
     color:black;
     font-size:20px;
     text-decoration:none;
@@ -49,11 +49,6 @@
     margin:0 auto;
     color:#fff;
 }
-.navigation{
-    width:100%;
-    height:80px;
-    margin:0 auto;  
-}
 .navigationContent{
     width:980px;
     font-family: "PT Sans";
@@ -62,14 +57,14 @@
     text-align: center;
     margin:0 auto;   
 }
-a{
+.navigationContent>a{
     color:#fff;
     text-decoration: none;
     margin:9px;
     padding-right:18px;
     border-right:3px solid #fff;
 }
-a:hover{
+.navigationContent>a:hover{
     text-decoration:underline;
 }
 
@@ -121,9 +116,109 @@ a:hover{
   66.666% { opacity: 1}
   100% { opacity: 0}
 }
+/* Каталог */
+.link>a{
+    color:black;
+    font-family:"PT Sans";
+    font-size:14px;
+    text-decoration:underline;
+    letter-spacing: 0.35px;
+    margin:1px;
+    padding-right:3px;
+    font-weight: 400;
+    line-height: 18px;
+    
+}
+.link>a:hover{
+    text-decoration:none;
+}
+.link{
+    width:250px;
+    height:14px;   
+}
+.catalog{
+    height:1380px;
+    width:980px;
+    padding-left:10px;
+    padding-right:10px;
+    border:1px solid red;
+    margin:0px auto;
+    position:relative;
+}
+.leftblock{
+    border:1px solid green;
+    width:200px;
+    height:1133px;
+    margin-top:25px; 
+}
+.centerblock{
+    border:1px solid blue;
+    width:790px;
+    height:1133px; 
+    margin-top:25px;
+    position:absolute;
+    top:15px;
+    left:210px;
+}
+ul{
+    list-style: none;
+    margin-left:-20px;
+    color:#767676;
+}
+.linkLeft{
+    text-decoration: none;
+    color:#000;
+    font-size:18px;
+    font-weight:400;
+    font-family:"PT Sans";
+    letter-spacing: 0.45px;
+    line-height: 30px;
+}
+.linkLeft:hover{
+    text-decoration:underline;
+}
+.second>li{
+    list-style: disc;
+    font-size:14px;
+    letter-spacing:0.35px;
+    line-height:22px;
+}
+.second>li>a{
+    text-decoration:none;
+    color:black; 
+}
+.second>li>a:hover{
+    text-decoration: underline;
+}
+.priсe{
+    width:160px;
+    height:150px;
+    margin:110px auto;
+    padding:0px;
+}
+.excel{
+    width:100px;
+    height:100px;
+    margin-top:0px;
+    margin-left:25px;
+}
+.price-list{
+    font-size:30px;
+    color:#000;
+    font-family: "PT Sans";
+    font-weight:700;
+    line-height: 25px;
+}
+.article>div{
+    width:250px;
+    height:380px;
+    background-color:#f0eded;
+    margin-right:10px;
+    margin-top:15px;
+    display:inline-block;
+    
+}
 
-
- 
 
 
 
