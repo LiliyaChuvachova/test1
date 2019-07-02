@@ -1,4 +1,8 @@
-.header{
+body{
+    padding:0px;
+    margin:0px;
+}
+header{
     height: 230px;
     width: 100%;
     border: 1px solid #fff;
@@ -42,7 +46,7 @@
     text-decoration: none;
     border-bottom: 1px dashed #000;
 }
-.navigation{
+nav{
     background-color: #444444;
     height: 80px;
     width: 100%;
@@ -54,17 +58,18 @@
     font-family: "PT Sans";
     font-size: 30px;
     line-height: 80px;
-    text-align: center;
-    margin: 0 auto;   
+    margin: 0 auto;
+    list-style: none;
 }
-.navigationContent>a{
+.navigationContent>li{display:inline;}
+.navigationContent>li>a{
     color: #fff;
     text-decoration: none;
     margin: 9px;
     padding-right: 18px;
     border-right: 3px solid #fff;
 }
-.navigationContent>a:hover{
+.navigationContent>li>a: hover{
     text-decoration: underline;
 }
 
@@ -117,7 +122,15 @@
   100% { opacity: 0}
 }
 /* Каталог */
-.link>a{
+.link{
+    width: 250px;
+    height: 14px;
+    list-style: none;
+    position:relative;
+    left:220px;
+}
+.link>li{display:inline;}
+.link>li>a{
     color: black;
     font-family: "PT Sans";
     font-size: 14px;
@@ -126,41 +139,27 @@
     margin: 1px;
     padding-right: 3px;
     font-weight: 400;
-    line-height: 18px;
-    
+    line-height: 18px;   
 }
-.link>a:hover{
-    text-decoration: none;
-}
-.link{
-    width: 250px;
-    height: 14px;   
-}
-.catalog{
-    height: 1380px;
+.link>li>a:hover{text-decoration: none;}
+
+main{
     width: 980px;
     padding-left: 10px;
     padding-right: 10px;
-    border: 1px solid #fff;
+    border: 1px solid #1cde12;
     margin: 0px auto;
-    position: relative;
+    display: flex;/*!!!*/   
 }
-.leftblock{
-    border: 1px solid #fff;
-    width: 200px;
-    height: 1335px;
-    margin-top: 25px; 
+aside{
+    border: 1px solid #de1248;
+    width: 200px; 
 }
-.centerblock{
-    border: 1px solid #fff;
-    width: 790px;
-    height: 1335px; 
-    margin-top: 25px;
-    position: absolute;
-    top: 15px;
-    left: 210px;
+section{
+    border: 1px solid #5241b0;
+    width: 790px;  
 }
-ul{
+aside>ul{
     list-style: none;
     margin-left: -20px;
     color: #767676;
@@ -209,7 +208,7 @@ ul{
     font-weight: 700;
     line-height: 25px;
 }
-.article>div{
+article{
     width: 250px;
     height: 380px;
     background-color: #d9d7d7;
@@ -221,7 +220,7 @@ ul{
     height: 210px;
     margin: 20px 0 0 20px;
 }
-.article>div>p{
+article>p{
     font-family: "PS Sans";
     font-size: 18px;
     font-weight: 400;
@@ -229,7 +228,7 @@ ul{
     letter-spacing: 0.45px;
     margin-left: 20px;
 }
-.article>div>h4{
+.article>h4{
     font-family: "PS Sans";
     font-size: 28px;
     font-weight: 700px;
@@ -253,10 +252,10 @@ ul{
     height: 45px;
     line-height: 45px; 
 }
-.pagination>div{
+.pagination>li{
     display: inline; 
 }
-.pagination>div>a{
+.pagination>li>a{
     text-decoration: none;
     font-family: "PT Sans";
     font-size: 14px;
@@ -269,12 +268,11 @@ ul{
     -o-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
 }
-.pagination>div>a:hover{
+.pagination>li>a:hover{
     font-size: 18px;  
 }
 .text{
     width: 790px;
-    height: 440px;
     border-top: 1px solid black;
     column-count: 2;
     -webkit-column-count: 2;
@@ -295,15 +293,15 @@ ul{
     letter-spacing: 0.45px;
     margin-top: 20px;
 }
-.footer{
+footer{
     width: auto;
     height: 220px;
     background-color: dimgray;
-    margin-bottom: 0px;
-    margin: auto auto;
     padding-left: 25px;
     padding-right: 10px;
     padding-top: 30px;
+    margin-bottom: 0px;
+    
 }
 .company_footer{
     width: 200px;
@@ -325,15 +323,17 @@ ul{
     position: relative;
     left: 570px;
     top: -40px;
+    list-style: none;
+    
 }
-.link_footer>a{
+.link_footer>li>a{
     color: #fff;
     font-family: "PS Sans";
     font-size: 14px;
     font-weight: 400;
     text-decoration: underline;
     letter-spacing: 0.35px;
-    display: block;
+    
 }
 .pixel_footer{
     width: 220px;
