@@ -1,6 +1,6 @@
 body{
-    padding:0px;
-    margin:0px;
+    padding: 0px;
+    margin: 0px;
 }
 header{
     height: 230px;
@@ -22,29 +22,58 @@ header{
     padding-right: 15px;
     float: left;
 }
-.right{
-    position: relative;
-    left: 730px;
-    top: -65px;
-    width: 250px;
-    text-align: right;
-    border: 1px solid #fff;
-}
 .left{
-    width: 350px;
+    width: 300px;
     position: relative;
     top: 65px;
+    border:1px solid #fff; 
+}
+.left>h1{
+    font-size: 33px;
+    margin-top: 1px;
+    line-height: 27px;    
+}
+.left>h3{
+    font-size: 16px;
+    margin-top: -7px;
+}
+.right{
+    position: relative;
+    left: 710px;
+    top: -65px;
+    width: 270px;
+    text-align: right;
     border: 1px solid #fff;
+    height:81px;
 }
 .tel{
-    font-family: Forum-Regular, Verdana, sans-serif;
-    font-size: 25px; 
+    font-family: 'Open Sans Condensed';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 5px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-left: 0px;
 }
 #feedback{
     color: black;
-    font-size: 20px;
     text-decoration: none;
-    border-bottom: 1px dashed #000;
+    width: 171px;
+    height: 22px;
+    font-family: "PT Sans";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0.6px;
+    position: relative;
+    top: -25px;
+}
+hr{
+    width: 170px;
+    border-bottom: 2px dashed #000;
+    position: relative;
+    top: -45px;
+    left: 50px;
 }
 nav{
     background-color: #444444;
@@ -54,25 +83,23 @@ nav{
     color: #fff;
 }
 .navigationContent{
-    width: 980px;
+    width: 955px;
     font-family: "PT Sans";
     font-size: 30px;
-    line-height: 80px;
+    line-height: 70px;
     margin: 0 auto;
     list-style: none;
 }
 .navigationContent>li{display:inline;}
 .navigationContent>li>a{
     color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.75px;
     text-decoration: none;
-    margin: 9px;
-    padding-right: 18px;
-    border-right: 3px solid #fff;
+    margin: 5px;
+    padding-right: 13px;  
 }
-.navigationContent>li>a: hover{
-    text-decoration: underline;
-}
-
+.navigationContent>li>a:hover{text-decoration: underline;}
  /* Слайдер */
 .slides {
     height: 400px;
@@ -122,14 +149,25 @@ nav{
   100% { opacity: 0}
 }
 /* Каталог */
+.direction_right{
+    position: relative;
+    left: 1190px;
+    top: -250px; 
+}
+.direction_left{
+    position: relative;
+    left: 230px;
+    top: -250px; 
+}
 .link{
-    width: 250px;
+    width: 290px;
     height: 14px;
     list-style: none;
-    position:relative;
-    left:220px;
+    position: relative;
+    left: 230px;
+    top: -80px;
 }
-.link>li{display:inline;}
+.link>li{display: inline;}
 .link>li>a{
     color: black;
     font-family: "PT Sans";
@@ -137,35 +175,45 @@ nav{
     text-decoration: underline;
     letter-spacing: 0.35px;
     margin: 1px;
-    padding-right: 3px;
+    padding-right: 4px;
     font-weight: 400;
     line-height: 18px;   
 }
 .link>li>a:hover{text-decoration: none;}
-
 main{
     width: 980px;
     padding-left: 10px;
     padding-right: 10px;
-    border: 1px solid #1cde12;
-    margin: 0px auto;
+    border: 1px solid #000;
+    margin: -65px auto;
     display: flex;/*!!!*/   
 }
 aside{
-    border: 1px solid #de1248;
-    width: 200px; 
+    border: 1px solid #1cde12;
+    width: 200px;   
 }
 section{
-    border: 1px solid #5241b0;
-    width: 790px;  
+    border: 1px solid #1219de;
+    width: 800px;
+    
 }
 aside>ul{
     list-style: none;
-    margin-left: -20px;
+    margin-left: -40px;
+    margin-top:-10px;
     color: #767676;
 }
 .linkLeft{
     text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "PT Sans";
+    letter-spacing: 0.45px;
+    line-height: 30px;
+}
+.UnderlinkLeft{
+    text-decoration: underline;
     color: #000;
     font-size: 18px;
     font-weight: 400;
@@ -181,10 +229,12 @@ aside>ul{
     font-size: 14px;
     letter-spacing: 0.35px;
     line-height: 22px;
+    margin-left:-23px;
 }
 .second>li>a{
     text-decoration: none;
-    color: black; 
+    color: black;
+    margin-left:-1px;
 }
 .second>li>a:hover{
     text-decoration: underline;
@@ -192,7 +242,7 @@ aside>ul{
 .priсe{
     width: 160px;
     height: 150px;
-    margin: 110px auto;
+    margin: 105px auto;
     padding: 0px;
 }
 .excel{
@@ -200,6 +250,7 @@ aside>ul{
     height: 100px;
     margin-top: 0px;
     margin-left: 25px;
+    margin-bottom: 10px;
 }
 .price-list{
     font-size: 30px;
@@ -207,15 +258,19 @@ aside>ul{
     font-family: "PT Sans";
     font-weight: 700;
     line-height: 25px;
+    letter-spacing: 0.75px;
+    text-decoration:none;
 }
 article{
     width: 250px;
     height: 380px;
     background-color: #d9d7d7;
-    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 15px;
     display: inline-block;  
 }
-.nophoto{
+.top{margin-top:-15px;}
+.noPhoto{
     width: 210px;
     height: 210px;
     margin: 20px 0 0 20px;
@@ -226,16 +281,18 @@ article>p{
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.45px;
-    margin-left: 20px;
+    margin-left: 23px;
+    margin-top:13px;
 }
-.article>h4{
+h4{
     font-family: "PS Sans";
     font-size: 28px;
     font-weight: 700px;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.9px;
     width: 103px;
-    height: 26px;
-    margin-left: 20px;
+    position:relative;
+    left:22px;
+    top:10px;
 }
 .Shopping_Cart{
     width: 28px;
@@ -246,11 +303,11 @@ article>p{
 }
 .pagination{
     position: relative;
-    left: 300px;
-    top: -20px;
+    left: 275px;
+    top: -25px;
     width: 210px;
     height: 45px;
-    line-height: 45px; 
+     
 }
 .pagination>li{
     display: inline; 
@@ -260,7 +317,7 @@ article>p{
     font-family: "PT Sans";
     font-size: 14px;
     font-weight: 400;
-    letter-spacing: 17px;
+    letter-spacing: 16px;
     color: #000; 
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
@@ -277,21 +334,22 @@ article>p{
     column-count: 2;
     -webkit-column-count: 2;
     -moz-column-count: 2;
-    column-gap: normal;
-    -moz-column-gap: normal;
-    column-gap: normal;
+    column-gap: 50px;
+    -moz-column-gap: 50px;
+    column-gap: 50px;
     column-width: 370px;
     -webkit-column-width: 370px;
     -moz-column-width: 370px;
-    margin-top: 30px;
+    margin-top: -5px;
 }
 .text>p{
     font-family: "PS Sans";
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
-    letter-spacing: 0.45px;
+    letter-spacing: 0.35px;
     margin-top: 20px;
+    margin-left:5px;
 }
 footer{
     width: auto;
@@ -301,6 +359,7 @@ footer{
     padding-right: 10px;
     padding-top: 30px;
     margin-bottom: 0px;
+    margin-top:245px;
     
 }
 .company_footer{
@@ -314,15 +373,15 @@ footer{
     color: #fff;
     padding-top: 0px;
     position:relative;
-    left:250px;
+    left:247px;
 }
 .link_footer{
     width: 120px;
     height: 120px;
     line-height: 26px;
     position: relative;
-    left: 570px;
-    top: -40px;
+    left: 555px;
+    top: -60px;
     list-style: none;
     
 }
@@ -339,7 +398,7 @@ footer{
     width: 220px;
     height: 50px;
     position: relative;
-    top: -150px;
+    top: -190px;
     left: 1000px;     
 }
 .pixel_footer>a{
@@ -360,10 +419,6 @@ span{text-decoration: underline;}
 }
 
 
-
-
-
-
 @font-face {
     font-family: 'Forum';
     src:url(font/Forum.ttf); 
@@ -371,5 +426,11 @@ span{text-decoration: underline;}
     src: url('font/Forum.eot?#iefix') format('embedded-opentype'),
         url('font/Forum.woff2') format('woff2'),
         url('font/Forum.woff') format('woff');
-  
+}
+@font-face{
+   font-family: 'Open Sans Condensed';
+    src:url(font/OpenSansCondensed-Light.ttf);
+    src: url(font/OpenSansCondensed-Light.eot);
+    src: url('font/OpenSansCondensed-Light.woff2') format('woff2'),
+        url('font/OpenSansCondensed-Light.woff') format('woff');
 }
