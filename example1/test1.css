@@ -1,16 +1,15 @@
-body{
+body,div{
     padding: 0px;
     margin: 0px;
+    overflow-x:hidden;
 }
 header{
-    height: 230px;
     width: 100%;
     border: 1px solid #fff;
-    margin: 0 auto;  
+    margin: 0 auto; 
 }
 .content{
     width: 980px;
-    height: 230px;
     padding-left: 10px;
     padding-right: 10px;
     border: 1px solid #fff;
@@ -18,15 +17,16 @@ header{
 }
 .logo{
     width: 100px;
-    height: 100px;
-    padding-right: 15px;
-    float: left;
+    height:100px;
+    padding-right: 10px;
+    float: left;  
 }
 .left{
     width: 300px;
     position: relative;
-    top: 65px;
+    top: -48px;
     border:1px solid #fff; 
+    display:inline-block;   
 }
 .left>h1{
     font-size: 33px;
@@ -38,46 +38,41 @@ header{
     margin-top: -7px;
 }
 .right{
-    position: relative;
-    left: 710px;
-    top: -65px;
+   position: relative;
+   top:-5px;
     width: 270px;
     text-align: right;
-    border: 1px solid #fff;
-    height:81px;
+    display:inline-block;
+    margin-left:402px;
+    color:#000;
 }
 .tel{
     font-family: 'Open Sans Condensed';
     font-size: 40px;
     font-weight: 400;
-    line-height: 5px;
-    letter-spacing: 1px;
-    margin-top: 15px;
-    margin-left: 0px;
+    line-height: 45px;
+    letter-spacing: 1px; 
 }
 #feedback{
     color: black;
     text-decoration: none;
     width: 171px;
-    height: 22px;
     font-family: "PT Sans";
     font-size: 24px;
     font-weight: 700;
-    line-height: 46px;
     letter-spacing: 0.6px;
     position: relative;
-    top: -25px;
+    top: -37px;
 }
-hr{
+.underline_feedback{
     width: 170px;
     border-bottom: 2px dashed #000;
     position: relative;
-    top: -45px;
+    top: -50px;
     left: 50px;
 }
 nav{
     background-color: #444444;
-    height: 80px;
     width: 100%;
     margin: 0 auto;
     color: #fff;
@@ -86,18 +81,19 @@ nav{
     width: 955px;
     font-family: "PT Sans";
     font-size: 30px;
-    line-height: 70px;
+    line-height: 71px;
     margin: 0 auto;
     list-style: none;
+    padding-bottom: 10px;
 }
 .navigationContent>li{display:inline;}
 .navigationContent>li>a{
-    color: #fff;
+    color:#fff;
     font-weight: 400;
     letter-spacing: 0.75px;
     text-decoration: none;
     margin: 5px;
-    padding-right: 13px;  
+    padding-right: 13px;
 }
 .navigationContent>li>a:hover{text-decoration: underline;}
  /* Слайдер */
@@ -148,26 +144,33 @@ nav{
   66.666% { opacity: 1}
   100% { opacity: 0}
 }
-/* Каталог */
 .direction_right{
-    position: relative;
+    position: absolute;
     left: 1190px;
-    top: -250px; 
+    top: 157px;
+    opacity: 1;
 }
 .direction_left{
-    position: relative;
-    left: 230px;
-    top: -250px; 
+    position: absolute;
+    left: 270px;
+    top: 157px; 
+}
+/* Каталог */
+.menu{
+    width: 290px;
+    margin:0 left;
 }
 .link{
     width: 290px;
-    height: 14px;
     list-style: none;
-    position: relative;
-    left: 230px;
-    top: -80px;
+    display:inline-block;
 }
-.link>li{display: inline;}
+.link>li{
+    display: inline;
+    position:relative;
+    left:-40px;
+    top:-10px;
+}
 .link>li>a{
     color: black;
     font-family: "PT Sans";
@@ -180,22 +183,22 @@ nav{
     line-height: 18px;   
 }
 .link>li>a:hover{text-decoration: none;}
-main{
+section{
     width: 980px;
     padding-left: 10px;
     padding-right: 10px;
-    border: 1px solid #000;
-    margin: -65px auto;
-    display: flex;/*!!!*/   
+    margin: 0px auto; 
+}
+.big{
+    display:flex;//////////
 }
 aside{
-    border: 1px solid #1cde12;
-    width: 200px;   
+    width: 200px;     
 }
-section{
-    border: 1px solid #1219de;
-    width: 800px;
-    
+.centerBlock{
+    width: 780px;
+    margin:0px;
+    padding:0px;
 }
 aside>ul{
     list-style: none;
@@ -241,35 +244,32 @@ aside>ul{
 }
 .priсe{
     width: 160px;
-    height: 150px;
     margin: 105px auto;
-    padding: 0px;
+    overflow-y: hidden;
 }
 .excel{
     width: 100px;
-    height: 100px;
     margin-top: 0px;
     margin-left: 25px;
     margin-bottom: 10px;
 }
 .price-list{
-    font-size: 30px;
+    font-size: 28px;
     color: #000;
     font-family: "PT Sans";
     font-weight: 700;
-    line-height: 25px;
-    letter-spacing: 0.75px;
-    text-decoration:none;
+    line-height: 30px;
+    letter-spacing: 0.55px;
+    text-decoration:none; 
 }
 article{
     width: 250px;
-    height: 380px;
+    min-height: 380px;
     background-color: #d9d7d7;
-    margin-left: 10px;
+    margin-right:7px;
     margin-bottom: 15px;
-    display: inline-block;  
+    display: inline-block;
 }
-.top{margin-top:-15px;}
 .noPhoto{
     width: 210px;
     height: 210px;
@@ -283,34 +283,31 @@ article>p{
     letter-spacing: 0.45px;
     margin-left: 23px;
     margin-top:13px;
+    margin-bottom: 55px;
 }
-h4{
+.cost{
     font-family: "PS Sans";
     font-size: 28px;
-    font-weight: 700px;
     letter-spacing: 0.9px;
-    width: 103px;
-    position:relative;
-    left:22px;
-    top:10px;
+    width: 100px;
+    margin-left:18px;
+    margin-right:70px;
+    font-weight:bolder;
+    display:inline;   
 }
 .Shopping_Cart{
     width: 28px;
     height: 21px;
-    position: relative;
-    left: 190px;
-    top: -60px; 
 }
 .pagination{
-    position: relative;
-    left: 275px;
-    top: -25px;
+    margin:0px auto;
     width: 210px;
-    height: 45px;
-     
+    height:20px;
 }
 .pagination>li{
-    display: inline; 
+    display: inline;
+   line-height: 60px;
+    
 }
 .pagination>li>a{
     text-decoration: none;
@@ -324,66 +321,59 @@ h4{
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
+    line-height: 30px;   
 }
-.pagination>li>a:hover{
-    font-size: 18px;  
+.pagination>li>a: hover{
+    font-size: 18px;     
 }
-.text{
-    width: 790px;
-    border-top: 1px solid black;
-    column-count: 2;
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-gap: 50px;
-    -moz-column-gap: 50px;
-    column-gap: 50px;
-    column-width: 370px;
-    -webkit-column-width: 370px;
-    -moz-column-width: 370px;
-    margin-top: -5px;
+.line{
+    width: 775px;
+    height: 1px;
+    background-color: #000;
+    margin-top: 60px;
 }
-.text>p{
+.textLeft,.textRight{
+    width: 370px;
+    display: inline-flex;
     font-family: "PS Sans";
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0.35px;
-    margin-top: 20px;
-    margin-left:5px;
+    margin-top: 15px;
+    margin-left:30px;
+}
+.textLeft{
+   margin-left:0px; 
 }
 footer{
     width: auto;
-    height: 220px;
     background-color: dimgray;
-    padding-left: 25px;
-    padding-right: 10px;
-    padding-top: 30px;
+    margin-top: 205px;
     margin-bottom: 0px;
-    margin-top:245px;
-    
+    padding-bottom: 50px; 
 }
 .company_footer{
     width: 200px;
-    height: 40px;
     font-family: "PS Sans";
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0.35px;
     color: #fff;
-    padding-top: 0px;
-    position:relative;
-    left:247px;
+    display: inline-block;
+    position: relative;
+    left: 270px;
+    top: -55px;
 }
 .link_footer{
     width: 120px;
-    height: 120px;
     line-height: 26px;
-    position: relative;
-    left: 555px;
-    top: -60px;
     list-style: none;
-    
+    display: inline-block;
+    position: relative;
+    left: 375px;
+    top: 22px;   
 }
 .link_footer>li>a{
     color: #fff;
@@ -391,15 +381,14 @@ footer{
     font-size: 14px;
     font-weight: 400;
     text-decoration: underline;
-    letter-spacing: 0.35px;
-    
+    letter-spacing: 0.35px; 
 }
 .pixel_footer{
     width: 220px;
-    height: 50px;
-    position: relative;
-    top: -190px;
-    left: 1000px;     
+    display: inline-block;
+     position: relative;
+    left: 650px;
+    top: -55px;
 }
 .pixel_footer>a{
     font-family: "PT Sans";
