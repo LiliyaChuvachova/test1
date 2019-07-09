@@ -6,15 +6,17 @@
     <link rel = "stylesheet" href="test1.css" style type="text/css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <script src="test1.js" defer></script>
 </head>
   <body>
    <header>
      <div class="content">
-      <div class="left">
-       <img src="image/logotip.png" alt="логотип" class="logo">
-       <h1>Название компании</h1>
-       <h3>самая клевая компания</h3>
-       </div>
+     <div class="left">
+      <a href="/"><img src="image/logotip.png" alt="логотип" class="logo"></a>
+         <a href="/" class="left_logo_top" >Название компании</a>
+         <h3><a href="/" class="left_logo_bottom" >самая клевая компания</a></h3>
+         </div>
+         
        <div class="right">
            <p class="tel">+7(499) 777-77-77  +7(499) 777-77-77</p>
            <a href="#" id="feedback">Обратная связь</a><hr class="underline_feedback"> 
@@ -31,11 +33,15 @@
       </ul>
    </nav>
         <div class="slides">
+           <div class="parent_slaide">
             <div class="slide1"></div>
             <div class="slide2"></div>
-            <div class="slide3"></div>   
-        <img src="image/right.png" class="direction_right">
-        <img src="image/left.png" class="direction_left">  
+            <div class="slide3"></div>
+            <div class="direction">
+                <button id="direction_left" onclick="left"><img src="image/left.png"></button>  
+                <button id="direction_right" onclick="right"><img src="image/right.png"></button>
+               </div>     
+            </div>  
       </div>
    <section>
              <div>
@@ -68,16 +74,16 @@
             </div> 
         </aside>
         <div class="centerBlock">
-                <article><img src="image/nophoto.png" class="noPhoto">
-                <p>Самый клевый чайник, который надо купить!</p><p class="cost">1 900 p.</p><img src="image/Shopping_Cart.png" class="Shopping_Cart"></article>
-                <article><img src="image/nophoto.png" class="noPhoto">
-                <p>Самый клевый чайник, который надо купить!</p><p class="cost">1 900 p.</p><img src="image/Shopping_Cart.png" class="Shopping_Cart"></article>
-                <article><img src="image/nophoto.png" class="noPhoto">
-                <p>Самый клевый чайник, который надо купить!</p><p class="cost">1 900 p.</p><img src="image/Shopping_Cart.png" class="Shopping_Cart"></article>
-                <article><img src="image/nophoto.png" class="noPhoto">
-                <p>Самый клевый чайник, который надо купить!</p><p class="cost">1 900 p.</p><img src="image/Shopping_Cart.png" class="Shopping_Cart"></article>
-                <article><img src="image/nophoto.png" class="noPhoto">
-                <p>Самый клевый чайник, который надо купить!</p><p class="cost">1 900 p.</p><img src="image/Shopping_Cart.png" class="Shopping_Cart"></article>
+                <div class="item"><img src="image/nophoto.png" class="noPhoto">
+                <p>Самый клевый чайник, который надо купить!</p><p class="cost">1 900 p.</p><img src="image/Shopping_Cart.png" class="Shopping_Cart"></div>
+                <div class="item"><img src="image/nophoto.png" class="noPhoto">
+                <p>Самый клевый чайник, который надо купить!</p><p class="cost">1 900 p.</p><img src="image/Shopping_Cart.png" class="Shopping_Cart"></div>
+                <div class="item_right"><img src="image/nophoto.png" class="noPhoto">
+                <p>Самый клевый чайник, который надо купить!</p><p class="cost">1 900 p.</p><img src="image/Shopping_Cart.png" class="Shopping_Cart"></div>
+                <div class="item"><img src="image/nophoto.png" class="noPhoto">
+                <p>Самый клевый чайник, который надо купить!</p><p class="cost">1 900 p.</p><img src="image/Shopping_Cart.png" class="Shopping_Cart"></div>
+                <div class="item"><img src="image/nophoto.png" class="noPhoto">
+                <p>Самый клевый чайник, который надо купить!</p><p class="cost">1 900 p.</p><img src="image/Shopping_Cart.png" class="Shopping_Cart"></div>
             <ul class="pagination">
                <li><a href="#">1</a></li>
                <li><a href="#">2</a></li>
@@ -95,8 +101,10 @@
      </div>
    </section>
     <footer>
+      <div class="block_footer">
        <div class="company_footer">© 2012–2013 ЗАО «Компания» 
-info@name.ru</div>
+           <a href="mailto:info@name.ru" class="mail">info@name.ru</a>
+       </div>
        <ul class="link_footer">
            <li><a href="#">Главная</a></li>
            <li><a href="#">Каталог</a></li>
@@ -108,6 +116,7 @@ info@name.ru</div>
           <img src="image/company.png">
            <a href="#"><span>Разработка сайта —</span> компания «Пиксель Плюс»</a>
        </div>
+        </div>
     </footer>    
 </body>
 </html>

@@ -13,7 +13,15 @@ header{
     padding-left: 10px;
     padding-right: 10px;
     border: 1px solid #fff;
-    margin: 0 auto; 
+    margin: 0 auto;
+}
+.left{
+    width: 300px;
+    border:1px solid #fff; 
+    display:inline-block;
+    color:#000;
+    position:relative;
+    top:-35px;
 }
 .logo{
     width: 100px;
@@ -21,25 +29,28 @@ header{
     padding-right: 10px;
     float: left;  
 }
-.left{
-    width: 300px;
-    position: relative;
-    top: -48px;
-    border:1px solid #fff; 
-    display:inline-block;   
-}
-.left>h1{
+.left_logo_top{
+    text-decoration: none;
+    color:#000;
     font-size: 33px;
-    margin-top: 1px;
-    line-height: 27px;    
+    font-family: "PT Sans";
+    line-height: 21px;
+    font-weight:bolder; 
+}
+.left_logo_bottom{
+    font-size: 16px;
+    text-decoration: none;
+    color:#000;
+    font-family: "PT Sans";
 }
 .left>h3{
-    font-size: 16px;
-    margin-top: -7px;
+    position:relative;
+    top:-10px;
 }
+
 .right{
-   position: relative;
-   top:-5px;
+    position: relative;
+    top:-5px;
     width: 270px;
     text-align: right;
     display:inline-block;
@@ -103,25 +114,33 @@ nav{
     position: relative;
     width: 100%;
 }
-.slides > div {
-  position: absolute;
-  width: 100%;
-  height: 400px;
+.parent_slaide{
+    position:relative;
+    margin:0 auto;
+    width:1400px;
+    height:400px;
+    padding:0px;
+}
+.slide1,.slide2,.slide3 {
+    position: absolute;
+    width:1400px;
+    height: 400px;
+   
 }
 .slide1 {
   background: url(image/1.jpg);  
-  animation: fade 8s infinite;
-  -webkit-animation: fade 8s infinite;
+  animation: fade 16s infinite;
+  -webkit-animation: fade 16s infinite;
 } 
-.slide2 {
+.slide2 {   
   background: url(image/2.jpg);
-  animation: fade2 8s infinite;
-  -webkit-animation: fade2 8s infinite;
+  animation: fade2 16s infinite;
+  -webkit-animation: fade2 16s infinite;
 }
-.slide3 {
+.slide3 {    
   background: url(image/3.jpg);
-  animation: fade3 8s infinite;
-  -webkit-animation: fade3 8s infinite;
+  animation: fade3 16s infinite;
+  -webkit-animation: fade3 16s infinite;
 }
 @keyframes fade
 {
@@ -144,16 +163,18 @@ nav{
   66.666% { opacity: 1}
   100% { opacity: 0}
 }
-.direction_right{
-    position: absolute;
-    left: 1190px;
-    top: 157px;
-    opacity: 1;
+.direction{
+    width:980px;
+    margin:150px auto;  
 }
-.direction_left{
-    position: absolute;
-    left: 270px;
-    top: 157px; 
+#direction_left{
+    position: relative;
+    padding:0;
+}
+#direction_right{
+    position: relative;
+    left:880px;
+    padding:0;
 }
 /* Каталог */
 .menu{
@@ -164,12 +185,11 @@ nav{
     width: 290px;
     list-style: none;
     display:inline-block;
+    padding: 3px;
+    margin-top:0px;
 }
 .link>li{
     display: inline;
-    position:relative;
-    left:-40px;
-    top:-10px;
 }
 .link>li>a{
     color: black;
@@ -190,20 +210,21 @@ section{
     margin: 0px auto; 
 }
 .big{
-    display:flex;//////////
+    display:flex;
 }
 aside{
     width: 200px;     
 }
 .centerBlock{
     width: 780px;
-    margin:0px;
+    margin:5px 0 0 0;
     padding:0px;
+    font-size:0;
 }
 aside>ul{
     list-style: none;
-    margin-left: -40px;
-    margin-top:-10px;
+    padding: 0px;
+    margin-top:0px;
     color: #767676;
 }
 .linkLeft{
@@ -262,30 +283,48 @@ aside>ul{
     letter-spacing: 0.55px;
     text-decoration:none; 
 }
-article{
+.item{
     width: 250px;
     min-height: 380px;
     background-color: #d9d7d7;
-    margin-right:7px;
-    margin-bottom: 15px;
-    display: inline-block;
+    margin-right:15px;
+    margin-bottom: 17px;
+    display:inline-block;
+}
+.item_right{
+    width: 250px;
+    min-height: 380px;
+    background-color: #d9d7d7;
+    margin-right:0px;
+    margin-bottom: 20px;
+    display:inline-block;
 }
 .noPhoto{
     width: 210px;
     height: 210px;
-    margin: 20px 0 0 20px;
+    margin: 20px 20px 20px 20px;
 }
-article>p{
+.item>p{
     font-family: "PS Sans";
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.45px;
     margin-left: 23px;
-    margin-top:13px;
+    margin-top:0px;
     margin-bottom: 55px;
 }
-.cost{
+.item_right>p{
+    font-family: "PS Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.45px;
+    margin-left: 23px;
+    margin-top:0px;
+    margin-bottom: 55px;
+}
+p.cost{
     font-family: "PS Sans";
     font-size: 28px;
     letter-spacing: 0.9px;
@@ -301,12 +340,14 @@ article>p{
 }
 .pagination{
     margin:0px auto;
-    width: 210px;
+    width: 200px;
     height:20px;
 }
 .pagination>li{
     display: inline;
    line-height: 60px;
+    margin-left:0px;
+    
     
 }
 .pagination>li>a{
@@ -314,23 +355,24 @@ article>p{
     font-family: "PT Sans";
     font-size: 14px;
     font-weight: 400;
-    letter-spacing: 16px;
+    letter-spacing: 20px;
     color: #000; 
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
-    line-height: 30px;   
+    line-height: 30px;  
+   
 }
-.pagination>li>a: hover{
+.pagination>li>a:hover{
     font-size: 18px;     
 }
 .line{
     width: 775px;
     height: 1px;
     background-color: #000;
-    margin-top: 60px;
+    margin-top: 75px;
 }
 .textLeft,.textRight{
     width: 370px;
@@ -340,7 +382,7 @@ article>p{
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0.35px;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left:30px;
 }
 .textLeft{
@@ -353,6 +395,12 @@ footer{
     margin-bottom: 0px;
     padding-bottom: 50px; 
 }
+.block_footer{
+    width:980px;
+    padding:0px 10ppx 0px 10px;
+    margin:0px auto;
+    overflow-y:hidden;
+}
 .company_footer{
     width: 200px;
     font-family: "PS Sans";
@@ -363,8 +411,11 @@ footer{
     color: #fff;
     display: inline-block;
     position: relative;
-    left: 270px;
     top: -55px;
+}
+.mail{
+    color:#fff;
+    text-decoration: none;
 }
 .link_footer{
     width: 120px;
@@ -372,7 +423,7 @@ footer{
     list-style: none;
     display: inline-block;
     position: relative;
-    left: 375px;
+    left: 105px;
     top: 22px;   
 }
 .link_footer>li>a{
@@ -387,7 +438,7 @@ footer{
     width: 220px;
     display: inline-block;
      position: relative;
-    left: 650px;
+    left: 390px;
     top: -55px;
 }
 .pixel_footer>a{
