@@ -125,7 +125,24 @@ nav{
     position: absolute;
     width:1400px;
     height: 400px;
-   
+     overflow-y:hidden;
+}
+
+.clear{
+    position: absolute;
+    width:1400px;
+    height: 400px;    
+    z-index: 1; 
+}
+.show{
+   position: absolute;
+    width:1400px;
+    height: 400px;    
+    z-index: 3; 
+}
+.size_picture{
+    width:1400px;
+    height:400px;
 }
 .slide1 {
   background: url(image/1.jpg);  
@@ -165,16 +182,18 @@ nav{
 }
 .direction{
     width:980px;
-    margin:150px auto;  
+    margin:150px auto;
 }
 #direction_left{
     position: relative;
     padding:0;
+    z-index: 4;
 }
 #direction_right{
     position: relative;
     left:880px;
     padding:0;
+    z-index: 4;
 }
 /* Каталог */
 .menu{
