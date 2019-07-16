@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
     <script src="test1.js" defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src='jquery.js' type='text/javascript'></script>
 </head>
   <body>
    <header>
@@ -19,9 +21,24 @@
          
        <div class="right">
            <p class="tel">+7(499) 777-77-77  +7(499) 777-77-77</p>
-           <a href="#" id="feedback">Обратная связь</a><hr class="underline_feedback"> 
+           <div id="fade"></div>
+           <a href="#" class="open_modal" id="callback">Обратная связь</a> 
+           <hr class="underline_feedback"> 
        </div>
      </div>
+        <div id="modal_center">
+         <div id="grey">
+         <button id="close">x</button>
+       <form>
+        <p class="legend">ОБРАТНАЯ СВЯЗЬ</p>
+          Ваше имя<br><input type="text" name="name" class="input_text"><br>
+           Телефон<br><input type="text" name ="tel"class="input_text"><br>
+           Email<br><input type="text" name="email" class="input_text red" placeholder="Поле обязательно для заполнения"><br>
+           Сообщение<br><textarea name="text" class="sms"></textarea><br>
+           <input type="submit" value="Отправить" class="submit">
+       </form> 
+    </div>  
+       </div>
     </header>
    <nav>
       <ul class="navigationContent">
@@ -117,6 +134,6 @@
            <a href="#"><span>Разработка сайта —</span> компания «Пиксель Плюс»</a>
        </div>
         </div>
-    </footer>    
+    </footer>   
 </body>
 </html>
