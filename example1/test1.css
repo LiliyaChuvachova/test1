@@ -233,13 +233,14 @@ aside>ul{
 .priсe{
     width: 160px;
     margin: 105px auto;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 .excel{
     width: 100px;
     margin-top: 0px;
     margin-left: 25px;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 .price-list{
     font-size: 28px;
@@ -435,9 +436,10 @@ span{text-decoration: underline;}
     background-color: #eeeeee;
     width: 468px;
     height: 580px;
-    position: fixed;
-    top: 285px;
-    left: 540px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 2000;
     font-family: "PT Sans";
     font-size: 14px;
